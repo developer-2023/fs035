@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+</head>
+<body>
+    <form action="new_user.php" method="post">
+        <p>
+            <label for="user-name">User name:</label>
+            <input type="text" name="user-name" id="user-name">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="born-date">Born date:</label>
+            <input type="datetime-local" name="born-date" id="born-date">
+        </p>
+        <div>
+            User type:
+            <p>
+                <input type="radio" name="user-type" id="company" value="company">
+                <label for="company">Company</label>
+            </p>
+            <p>
+                <input type="radio" name="user-type" id="natural-person" value="person">
+                <label for="natural-person">Natural person</label>
+            </p>
+            <p>
+                <input type="radio" name="user-type" id="foundation" value="foundation">
+                <label for="foundation">Foundation</label>
+            </p>
+        </div>
+        <p>
+            <label for="color-theme">Color theme:</label>
+            <input type="color" name="color-theme" id="color-theme">
+        </p>
+        <p>
+            <h3>Hobbies:</h3>
+            <input type="checkbox" name="tag" id="Computers" value="hardware">
+            <label for="Computers">Computers</label>
+            <input type="checkbox" name="tag" id="Coding" value="software">
+            <label for="software">Coding</label>
+            <input type="checkbox" name="tag" id="Cinema" value="cinema">
+            <label for="cinema">Cinema</label>
+        </p>
+        <p>
+            <label for="favourite-category">Category:</label>
+            <select name="category" id="favourite-category">
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <option value="category3">Category 3</option>
+            </select>
+        </p>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
